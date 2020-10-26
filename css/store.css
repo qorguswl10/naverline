@@ -1,0 +1,49 @@
+@import url(./reset.css);
+header { position: fixed; left: 0; top: 0; width: 100%; height: 60px; background-color: white; border-bottom: 3px solid black; z-index: 1000; }
+header > .menubar { position: relative; width: 1000px; margin: 0 auto; }
+header > .menubar > .logo { display: block; position: absolute; left: 10px; top: 18px; width: 70px; height: 30px; text-indent: -9999px; background-image: url(./../images/logo160629.png); background-repeat: no-repeat; background-size: contain; }
+header > .menubar > nav { position: absolute; left: 100px; top: 20px; }
+header > .menubar > nav > .gnb { display: flex; flex-flow: row nowrap; }
+header > .menubar > nav > .gnb > li { padding: 0 15px; height: 20px; line-height: 20px; text-align: center; border-right: 1px solid #ccc; }
+header > .menubar > nav > .gnb > li:last-child { border-right: 0; }
+header > .menubar > nav > .gnb > li:active, header > .menubar > nav > .gnb > li:hover, header > .menubar > nav > .gnb > li.on { font-weight: 800; }
+header > .menubar > .language { float: right; margin: 15px 10px 0 0; border: 1px solid #ccc; }
+header > .menubar > .language > li { position: relative; }
+header > .menubar > .language > li:hover > ul { display: block; }
+header > .menubar > .language > li > a { display: block; width: 150px; margin-left: 5px; padding: 2px 0; }
+header > .menubar > .language > li > ul { display: none; position: absolute; left: -1px; background-color: #fff; border: 1px solid #ccc; }
+header > .menubar > .language > li > ul:last-child { left: -157px; top: 19px; border-right: 0; }
+header > .menubar > .language > li > ul > li:hover > a, header > .menubar > .language > li > ul > li.on > a { color: #58c758; }
+header > .menubar > .language > li > ul > li > a { display: block; width: 150px; height: 30px; margin-left: 5px; line-height: 30px; }
+
+section { margin-top: 63px; }
+section > .store { position: relative; width: 100%; height: 400px; margin-bottom: 70px; background-image: url(./../images/PC_LINE_Store_ko_1.png); background-repeat: no-repeat; background-position: center center; }
+section > .store > div { position: relative; width: 1000px; margin: 0 auto; }
+section > .store > div > h1 { position: absolute; left: 0; top: 60px; color: white; font-size: 40px; }
+section > .store > div > p { position: absolute; left: 0; top: 230px; color: white; font-size: 18px; }
+section > .store > div > span { position: absolute; left: 0; top: 290px; }
+section > .store > div > span > a { display: block; width: 150px; height: 35px; line-height: 35px; text-align: center; color: #fff; font-size: 18px; border: 2px solid #fff; }
+section > article { width: 1050px; margin: 0 auto; }
+section > article:last-child > .cont { margin-bottom: 0; }
+section > article > .cont { display: flex; justify-content: space-between; margin-bottom: 230px; }
+section > article > .cont > .exp { margin-top: 40px; }
+section > article > .cont > .exp > p { width: 450px; margin: 0 0 20px 5px; font-size: 14px; line-height: 1.9; }
+section > article > .cont > .exp > h2 { margin-bottom: 30px; font-weight: 400; font-size: 55px; color: #3b3b3b; }
+section > article > .cont > .exp > a { margin-left: 5px; color: blue; font-size: 14px; text-decoration: underline; }
+section > article > .cont > .exp > a:hover { text-decoration: none; }
+section > article > .cont > li:first-child .frame { width: 560px; height: 500px; }
+section > article > .cont > li:first-child .frame > img { width: 100%; }
+section > article > .cont > li > .frame { width: 450px; height: 450px; }
+section > article > .cont > li > .frame > img { width: 100%; }
+
+footer { height: 180px; background-color: #3b3b3b; }
+footer > div { position: relative; width: 1000px; margin: 0 auto; }
+footer > div > ul.footbar { position: absolute; display: flex; margin-top: 30px; }
+footer > div > ul.footbar > li { padding: 0 10px; font-size: 13px; border-right: 1px solid #7e7e7e; }
+footer > div > ul.footbar > li:last-child { border-right: 0; }
+footer > div > ul.footbar > li > a { height: 20px; color: #7e7e7e; }
+footer > div > .youtube { display: block; position: absolute; top: 60px; left: 7px; width: 33px; height: 40px; background: url(./../images/spritePC200706.png); background-position: 502px 2px; text-indent: -9999px; }
+footer > div > .facebook { display: block; position: absolute; top: 60px; left: 60px; width: 32px; height: 40px; background: url(./../images/spritePC200706.png); background-position: 732px 2px; text-indent: -9999px; }
+footer > div > address { position: absolute; top: 110px; left: 8px; color: #7e7e7e; font-weight: 800; font-size: 13px; }
+
+/*# sourceMappingURL=store.css.map */

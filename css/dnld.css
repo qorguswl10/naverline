@@ -1,0 +1,50 @@
+@import url(./reset.css);
+header { position: fixed; left: 0; top: 0; width: 100%; height: 60px; background-color: white; border-bottom: 3px solid black; z-index: 1000; }
+header > .menubar { position: relative; width: 1000px; margin: 0 auto; }
+header > .menubar > .logo { display: block; position: absolute; left: 10px; top: 18px; width: 70px; height: 30px; text-indent: -9999px; background-image: url(./../images/logo160629.png); background-repeat: no-repeat; background-size: contain; }
+header > .menubar > nav { position: absolute; left: 100px; top: 20px; }
+header > .menubar > nav > .gnb { display: flex; flex-flow: row nowrap; }
+header > .menubar > nav > .gnb > li { padding: 0 15px; height: 20px; line-height: 20px; text-align: center; border-right: 1px solid #ccc; }
+header > .menubar > nav > .gnb > li:last-child { border-right: 0; }
+header > .menubar > nav > .gnb > li:active, header > .menubar > nav > .gnb > li:hover, header > .menubar > nav > .gnb > li.on { font-weight: 800; }
+header > .menubar > .language { float: right; margin: 15px 10px 0 0; border: 1px solid #ccc; }
+header > .menubar > .language > li { position: relative; }
+header > .menubar > .language > li:hover > ul { display: block; }
+header > .menubar > .language > li > a { display: block; width: 150px; margin-left: 5px; padding: 2px 0; }
+header > .menubar > .language > li > ul { display: none; position: absolute; left: -1px; background-color: #fff; border: 1px solid #ccc; }
+header > .menubar > .language > li > ul:last-child { left: -157px; top: 19px; border-right: 0; }
+header > .menubar > .language > li > ul > li:hover > a, header > .menubar > .language > li > ul > li.on > a { color: #58c758; }
+header > .menubar > .language > li > ul > li > a { display: block; width: 150px; height: 30px; margin-left: 5px; line-height: 30px; }
+
+section { margin-top: 63px; }
+section > .dnld { display: flex; width: 1050px; margin: 0 auto; }
+section > .dnld > article { width: 50%; margin: 0 auto; }
+section > .dnld > article:last-child > .frame { width: 300px; }
+section > .dnld > article > h2 { margin: 90px 0 50px 0; color: #3b3b3b; font-weight: 600; font-size: 40px; text-align: center; }
+section > .dnld > article > .frame { width: 200px; height: 230px; margin: 0 auto; }
+section > .dnld > article > .frame > img { width: 100%; }
+section > .dnld > article > a { display: block; width: 280px; height: 50px; margin: 30px 150px; background-image: url(./../images/dl_mac_161229_ko.png); background-repeat: no-repeat; background-size: contain; text-indent: -9999px; }
+section > .dnld > article > .os { display: flex; justify-content: center; margin: 30px 0; }
+section > .dnld > article > .os > li { width: 180px; text-indent: -9999px; background-repeat: no-repeat; background-size: contain; }
+section > .dnld > article > .os > li:nth-child(1) { background-image: url(./../images/dl_google_161229_ko.png); }
+section > .dnld > article > .os > li:nth-child(2) { background-image: url(./../images/dl_ios_161229_ko.png); }
+section > .dnld > article > .os > li > a { display: block; height: 50px; }
+section > .dnld > article > div { display: flex; justify-content: center; margin: 50px 0 130px 0; }
+section > .dnld > article > div > a { display: block; opacity: 0.5; margin-right: 10px; }
+section > .dnld > article > div > a:hover { opacity: initial; }
+section > .dnld > article > div > a > div { width: 100px; height: 80px; }
+section > .dnld > article > div > a > div > .frame { width: 40px; height: 40px; margin: 0 auto; }
+section > .dnld > article > div > a > div > .frame > img { width: 100%; }
+section > .dnld > article > div > a > div > h3 { margin-top: 20px; font-weight: 400; text-align: center; }
+
+footer { height: 180px; background-color: #3b3b3b; }
+footer > div { position: relative; width: 1000px; margin: 0 auto; }
+footer > div > ul.footbar { position: absolute; display: flex; margin-top: 30px; }
+footer > div > ul.footbar > li { padding: 0 10px; font-size: 13px; border-right: 1px solid #7e7e7e; }
+footer > div > ul.footbar > li:last-child { border-right: 0; }
+footer > div > ul.footbar > li > a { height: 20px; color: #7e7e7e; }
+footer > div > .youtube { display: block; position: absolute; top: 60px; left: 7px; width: 33px; height: 40px; background: url(./../images/spritePC200706.png); background-position: 502px 2px; text-indent: -9999px; }
+footer > div > .facebook { display: block; position: absolute; top: 60px; left: 60px; width: 32px; height: 40px; background: url(./../images/spritePC200706.png); background-position: 732px 2px; text-indent: -9999px; }
+footer > div > address { position: absolute; top: 110px; left: 8px; color: #7e7e7e; font-weight: 800; font-size: 13px; }
+
+/*# sourceMappingURL=dnld.css.map */

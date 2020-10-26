@@ -1,0 +1,256 @@
+@charset "utf-8";
+@import url(./reset.css);
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border-bottom: 3px solid black;
+	z-index: 1000;
+	> .menubar {
+		position: relative;
+		width: 1000px;
+		margin: 0 auto;
+		> .logo {
+			display: block;
+			position: absolute;
+			left: 10px;
+			top: 18px;
+			width: 70px;
+			height: 30px;
+			text-indent: -9999px;
+			background-image: url(./../images/logo160629.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		> nav {
+			position: absolute;
+			left: 100px;
+			top: 20px;
+			> .gnb {
+				display: flex;
+				flex-flow: row nowrap;
+				> li {
+					padding: 0 15px;
+					height: 20px;
+					line-height: 20px;
+					text-align: center;
+					border-right: 1px solid #ccc;
+					&:last-child {
+						border-right: 0;
+					}
+					&:active,
+					&:hover,
+					&.on {
+						font-weight: 800;
+					}
+				} //end of li
+			} //end of gnb
+		}
+		> .language {
+			float: right;
+			margin: 15px 10px 0 0;
+			border: 1px solid #ccc;
+			> li {
+				position: relative;
+				&:hover > ul {
+					display: block;
+				}
+				> a {
+					display: block;
+					width: 150px;
+					margin-left: 5px;
+					padding: 2px 0;
+				}
+				> ul {
+					display: none;
+					position: absolute;
+					left: -1px;
+					background-color: #fff;
+					border: 1px solid #ccc;
+					&:last-child {
+						left: -157px;
+						top: 19px;
+						border-right: 0;
+					}
+					> li {
+						&:hover,
+						&.on {
+							> a {
+								color: rgb(88, 199, 88);
+							}
+						}
+						> a {
+							display: block;
+							width: 150px;
+							height: 30px;
+							margin-left: 5px;
+							line-height: 30px;
+						}
+					}
+				}
+			}
+		} //end of language
+	} //end of menubar
+}
+section {
+	margin-top: 63px;
+	> .store {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		margin-bottom: 70px;
+		background-image: url(./../images/PC_LINE_Store_ko_1.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		> div {
+			position: relative;
+			width: 1000px;
+			margin: 0 auto;
+			> h1 {
+				position: absolute;
+				left: 0;
+				top: 60px;
+				color: white;
+				font-size: 40px;
+			}
+			> p {
+				position: absolute;
+				left: 0;
+				top: 230px;
+				color: white;
+				font-size: 18px;
+			}
+			> span {
+				position: absolute;
+				left: 0;
+				top: 290px;
+				> a {
+					display: block;
+					width: 150px;
+					height: 35px;
+					line-height: 35px;
+					text-align: center;
+					color: #fff;
+					font-size: 18px;
+					border: 2px solid #fff;
+				}
+			}
+		} //end of div
+	}
+
+	> article {
+		width: 1050px;
+		margin: 0 auto;
+		&:last-child {
+			> .cont {
+				margin-bottom: 0;
+			}
+		}
+		> .cont {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 230px;
+			> .exp {
+				margin-top: 40px;
+				> p {
+					width: 450px;
+					margin: 0 0 20px 5px;
+					font-size: 14px;
+					line-height: 1.9;
+				}
+				> h2 {
+					margin-bottom: 30px;
+					font-weight: 400;
+					font-size: 55px;
+					color: #3b3b3b;
+				}
+				> a {
+					margin-left: 5px;
+					color: blue;
+					font-size: 14px;
+					text-decoration: underline;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+			> li {
+				&:first-child {
+					.frame {
+						width: 560px;
+						height: 500px;
+						> img {
+							width: 100%;
+						}
+					}
+				}
+				> .frame {
+					width: 450px;
+					height: 450px;
+					> img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	height: 180px;
+	background-color: #3b3b3b;
+	> div {
+		position: relative;
+		width: 1000px;
+		margin: 0 auto;
+		> ul.footbar {
+			position: absolute;
+			display: flex;
+			margin-top: 30px;
+			> li {
+				padding: 0 10px;
+				font-size: 13px;
+				border-right: 1px solid #7e7e7e;
+				&:last-child {
+					border-right: 0;
+				}
+				> a {
+					height: 20px;
+					color: #7e7e7e;
+				}
+			}
+		} //end of ul.footbar
+		> .youtube {
+			display: block;
+			position: absolute;
+			top: 60px;
+			left: 7px;
+			width: 33px;
+			height: 40px;
+			background: url(./../images/spritePC200706.png);
+			background-position: 502px 2px;
+			text-indent: -9999px;
+		}
+		> .facebook {
+			display: block;
+			position: absolute;
+			top: 60px;
+			left: 60px;
+			width: 32px;
+			height: 40px;
+			background: url(./../images/spritePC200706.png);
+			background-position: 732px 2px;
+			text-indent: -9999px;
+		}
+		> address {
+			position: absolute;
+			top: 110px;
+			left: 8px;
+			color: #7e7e7e;
+			font-weight: 800;
+			font-size: 13px;
+		}
+	} //div
+}
